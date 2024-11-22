@@ -7,6 +7,7 @@ import FoodList from './FoodList';
 import Cart from './Cart';
 import Login from './components/Login';
 import Register from './components/Register';
+import './index.css'
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -28,19 +29,19 @@ const App = () => {
     <CartProvider>
         <div>
           <nav className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <Link to="/"  className='link'>Home</Link>
+            <Link to="/about"  className='link'>About</Link>
 
             {isAuthenticated ? (
               <>
-                <Link to="/foodlist">Menu</Link>
-                <Link to="/cart">Cart</Link>
+                <Link to="/foodlist" className='link'>Menu</Link>
+                <Link to="/cart" className='link'>Cart</Link>
                 <button onClick={handleLogout}>Logout</button>
               </>
             ) : (
               <>
-                <Link to="/login">Login</Link>
-                <Link to="/register">Register</Link>
+                <Link to="/login" className='link'>Login</Link>
+                <Link to="/register" className='link'>Register</Link>
               </>
             )}
           </nav>

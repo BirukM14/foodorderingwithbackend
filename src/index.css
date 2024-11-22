@@ -40,7 +40,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the foodmenu container */
 .foodmenu {
   font-family: 'Arial', sans-serif; /* Clean font style */
   background-color: #e93d3d; /* Light background color */
@@ -51,55 +50,53 @@
   margin: 20px auto; /* Center the menu on the page */
 }
 
-/* Style for the food menu heading */
 .foodmenu h2 {
-  font-size: 2.5rem; /* Larger size for the main heading */
-  color: #333; /* Dark text color for contrast */
-  text-align: center; /* Center-align the heading */
-  margin-bottom: 20px; /* Space below the heading */
+  font-size: 2.5rem; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 20px; 
 }
 
-/* Style for the food items list */
 .foodmenu ul {
   list-style-type: none; /* Remove default list styling */
   padding: 0; /* Remove padding */
 }
 
 .foodmenu li {
-  background-color: white; /* White background for each food item */
-  margin-bottom: 20px; /* Space between food items */
-  padding: 20px; /* Padding inside each food item */
-  border-radius: 50px; /* Rounded corners for each item */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  background-color: white; 
+  margin-bottom: 20px; 
+  padding: 20px; 
+  border-radius: 50px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .foodmenu li h3 {
-  font-size: 1.8rem; /* Larger text for food names */
-  color: #08b450; /* Dark color for readability */
-  margin: 0; /* Remove any default margins */
+  font-size: 1.8rem; 
+  color: #08b450; 
+  margin: 0; 
 }
 
 .foodmenu li p {
-  font-size: 1rem; /* Standard font size for paragraphs */
-  color: #666666; /* Lighter color for description text */
-  margin: 5px 0; /* Space between paragraphs */
+  font-size: 1rem; 
+  color: #666666; 
+  margin: 5px 0; 
 }
 
 .foodmenu li h3:nth-of-type(2) {
-  font-size: 1.2rem; /* Adjust font size for available text */
-  color: green; /* Color for availability text */
+  font-size: 1.2rem; 
+  color: green; 
 }
 
 .foodmenu li p:nth-of-type(3) {
-  font-size: 1.1rem; /* Slightly larger text for price */
-  color: #333; /* Dark color for price */
+  font-size: 1.1rem; 
+  color: #333; 
 }
 
 
 
 .foodmenu li p.category {
-  font-style: italic; /* Italicize the category */
-  color: #888; /* Lighter color for category */
+  font-style: italic; 
+  color: #888; 
 }
 
 
@@ -114,7 +111,7 @@ button {
 button:hover {
   background-color: #218838;
 }
-/* General Styles for Navbar */
+
 * {
   margin: 0;
   padding: 0;
@@ -125,11 +122,14 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
 }
+.link{
+  color: #45a049;
 
-/* Navbar Container */
+}
+
 .navbar {
-  background-color: #5f2323;
-  color: #d6d30e;
+  background-color: #aa2929;
+  color: #0ed651;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -138,7 +138,7 @@ body {
   margin-bottom: 20px ;
 }
 
-/* Navbar Brand/Logo */
+
 .navbar .logo {
   font-size: 1.8rem;
   font-weight: bold;
@@ -146,8 +146,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-
-/* Navbar Links */
 .navbar .nav-links {
   list-style: none;
 }
@@ -166,29 +164,13 @@ body {
 .navbar .nav-links a:hover {
   color: #ff5722; /* Accent color on hover */
 }
-/* Navbar for Small Screens (Mobile View) */
 
-
-  /* Hide the links by default in mobile */
-  .navbar .nav-links {
-      width: 100%;
-      display: none;
-      flex-direction: column;
-      padding: 0;
-  }
-
-  .navbar .nav-links.active {
-      display: flex;
-  }
-
-  /* Space out links */
   .navbar .nav-links li {
       width: 100%;
       text-align: left;
       margin: 10px 0;
   }
 
-  /* Show menu icon on mobile */
   .navbar .menu-icon {
       display: block;
   }
@@ -198,29 +180,28 @@ body {
       text-align: center;
   }
 
-/* Active state for links on mobile */
 .navbar .nav-links.active li {
   background-color: #444;
 }
 
-/* Register form container */
+
 .register {
-  max-width: 400px; /* Set max width for the form */
-  margin: 0 auto;   /* Center the form horizontally */
+  max-width: 400px; 
+  margin: 0 auto;   
   padding: 20px;
-  background-color: #f4f4f9; /* Light background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  background-color: #f4f4f9; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Form title */
+
 .register h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Input fields and label styling */
+
 .register label {
   display: block;
   margin-bottom: 8px;
@@ -244,7 +225,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Button styling */
+
 .register button {
   width: 100%;
   padding: 14px;
@@ -261,14 +242,13 @@ body {
   background-color: #45a049; /* Slightly darker green on hover */
 }
 
-/* Error message */
+
 .register .error {
   color: red;
   margin-bottom: 15px;
   font-size: 14px;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 480px) {
   .register {
     padding: 15px;
@@ -282,7 +262,7 @@ body {
 .register h2{
   justify-content: center;
 }
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -290,9 +270,6 @@ body {
 }
 
 
-
-
-/* Login Container */
 .login {
   background-color: white;
   padding: 40px;
@@ -349,7 +326,7 @@ body {
   background-color: #45a049;
 }
 
-/* Additional Links */
+
 .login a {
   text-decoration: none;
   color: #5b9bd5;
@@ -358,8 +335,6 @@ body {
 .login a:hover {
   text-decoration: underline;
 }
-
-/* Footer */
 .login footer {
   font-size: 12px;
   color: #888;
