@@ -1,0 +1,367 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.header {
+  background-color: #f8f9fa; /* Light background color */
+  color: #333; /* Dark text color */
+  padding: 40px; /* Add some space around the content */
+  text-align: center; /* Center the text */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  margin: 20px auto; /* Add margin to center the content */
+  width: 80%; /* Set the width of the header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Style for the h2 heading inside the header */
+.header h2 {
+  font-size: 2rem; /* Larger font size */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: #2c3e50; /* Slightly darker text color for heading */
+}
+
+/* Style for the paragraph inside the header */
+.header p {
+  font-size: 1rem; /* Set font size for paragraph */
+  line-height: 1.6; /* Increase line height for readability */
+  color: #555; /* Slightly lighter text color for paragraph */
+  max-width: 800px; /* Limit the width for readability */
+  margin: 0 auto; /* Center the paragraph */
+}
+.cart {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the foodmenu container */
+.foodmenu {
+  font-family: 'Arial', sans-serif; /* Clean font style */
+  background-color: #e93d3d; /* Light background color */
+  padding: 30px; /* Add space inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 900px; /* Limit the width of the menu */
+  margin: 20px auto; /* Center the menu on the page */
+}
+
+/* Style for the food menu heading */
+.foodmenu h2 {
+  font-size: 2.5rem; /* Larger size for the main heading */
+  color: #333; /* Dark text color for contrast */
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Style for the food items list */
+.foodmenu ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.foodmenu li {
+  background-color: white; /* White background for each food item */
+  margin-bottom: 20px; /* Space between food items */
+  padding: 20px; /* Padding inside each food item */
+  border-radius: 50px; /* Rounded corners for each item */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.foodmenu li h3 {
+  font-size: 1.8rem; /* Larger text for food names */
+  color: #08b450; /* Dark color for readability */
+  margin: 0; /* Remove any default margins */
+}
+
+.foodmenu li p {
+  font-size: 1rem; /* Standard font size for paragraphs */
+  color: #666666; /* Lighter color for description text */
+  margin: 5px 0; /* Space between paragraphs */
+}
+
+.foodmenu li h3:nth-of-type(2) {
+  font-size: 1.2rem; /* Adjust font size for available text */
+  color: green; /* Color for availability text */
+}
+
+.foodmenu li p:nth-of-type(3) {
+  font-size: 1.1rem; /* Slightly larger text for price */
+  color: #333; /* Dark color for price */
+}
+
+
+
+.foodmenu li p.category {
+  font-style: italic; /* Italicize the category */
+  color: #888; /* Lighter color for category */
+}
+
+
+button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+/* General Styles for Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: #5f2323;
+  color: #d6d30e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 10;
+  margin-bottom: 20px ;
+}
+
+/* Navbar Brand/Logo */
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff5722; /* Accent color on hover */
+}
+/* Navbar for Small Screens (Mobile View) */
+
+
+  /* Hide the links by default in mobile */
+  .navbar .nav-links {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .navbar .nav-links.active {
+      display: flex;
+  }
+
+  /* Space out links */
+  .navbar .nav-links li {
+      width: 100%;
+      text-align: left;
+      margin: 10px 0;
+  }
+
+  /* Show menu icon on mobile */
+  .navbar .menu-icon {
+      display: block;
+  }
+
+  .navbar .nav-links a {
+      padding: 10px;
+      text-align: center;
+  }
+
+/* Active state for links on mobile */
+.navbar .nav-links.active li {
+  background-color: #444;
+}
+
+/* Register form container */
+.register {
+  max-width: 400px; /* Set max width for the form */
+  margin: 0 auto;   /* Center the form horizontally */
+  padding: 20px;
+  background-color: #f4f4f9; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Form title */
+.register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields and label styling */
+.register label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.register input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.register input[type="email"],
+.register input[type="password"],
+.register input[type="text"] {
+  font-family: Arial, sans-serif;
+}
+
+/* Button styling */
+.register button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Error message */
+.register .error {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  .register {
+    padding: 15px;
+  }
+
+  .register input,
+  .register button {
+    font-size: 14px;
+  }
+}
+.register h2{
+  justify-content: center;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Login Container */
+.login {
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  margin-left: 400px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.login p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  border-color: #5b9bd5;
+  outline: none;
+}
+
+.login button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Additional Links */
+.login a {
+  text-decoration: none;
+  color: #5b9bd5;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.login footer {
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
+}
